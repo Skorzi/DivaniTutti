@@ -4,11 +4,11 @@ import '../../static/css/header.css'
 export default function Header() {
 
     const list_of_links = [
-        {name: 'Каталог мебели'},
-        {name: 'Доставка и оплата'},
-        {name: 'О нас'},
-        {name: 'Связаться с нами'},
-        {name: 'Статьи о мебели'},
+        {name: 'Каталог мебели', href: '#'},
+        {name: 'Доставка и оплата', href: '#'},
+        {name: 'О нас', href: '#'},
+        {name: 'Связаться с нами', href: '#'},
+        {name: 'Статьи о мебели', href: '#'},
     ]
 
 
@@ -19,7 +19,9 @@ export default function Header() {
                     <div className='header__logo'>DIVANI_TUTTI</div>
                     <div className='header__links'>
                         {list_of_links.map(name_link => 
-                            <li key={name_link.name} className='header__category'>{name_link.name}</li>
+                            <li key={name_link.name} className='header__category'>
+                                <a href={name_link.href}>{name_link.name}</a>
+                            </li>
                         )}
                     </div>
                     <div className='header__burger'><BurgerMenu/></div>

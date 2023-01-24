@@ -35,7 +35,9 @@
           justify-content: space-between;
   min-width: 650px;
   padding: 15px 0% 0% 0%;
-  margin: 0 100px 0 0;
+  margin: 0 150px 0 0;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .header__burger {
