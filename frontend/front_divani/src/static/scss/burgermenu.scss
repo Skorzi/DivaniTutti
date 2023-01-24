@@ -1,0 +1,30 @@
+// .burger__menu{
+//     height: 100px;
+//     width: 100px;
+// }
+
+.burger__button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35px;
+    cursor: pointer;
+}
+
+.burger__line_1{
+    width: 50px;
+    height: 5px;
+    background-color: black;
+}
+
+.burger__line_2{
+    width: 50px;
+    height: 5px;
+    background-color: black;
+}
+
+.burger__line_3{
+    width: 50px;
+    height: 5px;
+    background-color: black;
+}
