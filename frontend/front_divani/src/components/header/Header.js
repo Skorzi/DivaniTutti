@@ -1,14 +1,11 @@
 import React from 'react'
 import BurgerMenu from './BurgerMenu'
-
+import '../../static/css/header.css'
 export default function Header() {
 
     const list_of_links = [
-        {name: 'Главная'},
         {name: 'Каталог мебели'},
-        {name: 'Мебель для дизайн проектов'},
-        {name: 'Доставка'},
-        {name: 'Оплата'},
+        {name: 'Доставка и оплата'},
         {name: 'О нас'},
         {name: 'Связаться с нами'},
         {name: 'Статьи о мебели'},
@@ -18,11 +15,13 @@ export default function Header() {
     return (
         <div className='header'>
             <div className='header__block'>
-                <div className='header__logo'></div>
-                <div className='header__links'>
-                    {list_of_links.map(name_link => 
-                        <li key={name_link.name} className='header__category'>{name_link.name}</li>
-                    )}
+                <div className='header__content'>
+                    <div className='header__logo'>DIVANI_TUTTI</div>
+                    <div className='header__links'>
+                        {list_of_links.map(name_link => 
+                            <li key={name_link.name} className='header__category'>{name_link.name}</li>
+                        )}
+                    </div>
                 </div>
                 {/* <BurgerMenu/> */}
             </div>
