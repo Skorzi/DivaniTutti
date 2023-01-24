@@ -9,24 +9,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 35px;
+  height: 25px;
   cursor: pointer;
 }
 
-.burger__line_1 {
-  width: 50px;
-  height: 5px;
-  background-color: black;
-}
-
-.burger__line_2 {
-  width: 50px;
-  height: 5px;
-  background-color: black;
-}
-
-.burger__line_3 {
-  width: 50px;
-  height: 5px;
+.burger__line_1, .burger__line_2, .burger__line_3 {
+  width: 35px;
+  border-radius: 10%;
+  height: 2px;
   background-color: black;
 }

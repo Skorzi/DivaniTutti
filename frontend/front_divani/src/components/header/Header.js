@@ -22,8 +22,8 @@ export default function Header() {
                             <li key={name_link.name} className='header__category'>{name_link.name}</li>
                         )}
                     </div>
+                    <div className='header__burger'><BurgerMenu/></div>
                 </div>
-                {/* <BurgerMenu/> */}
             </div>
         </div>
     )
