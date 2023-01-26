@@ -31,7 +31,7 @@ export default function BurgerMenu({categories}) {
             </div>
             <div className='burger__menu_block'>
                 <div ref={BGblock} className='burger__block_content'>
-                    <div className='burger__catergory'></div>
+                    <div className='burger__category'></div>
                     <div className='burger__search'></div>
                 </div>
             </div>

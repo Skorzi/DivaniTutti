@@ -28,7 +28,7 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: 32px;
   cursor: pointer;
-  margin: 0 0 0 3%;
+  margin: 0 0 0 6%;
 }
 
 .header__links {
@@ -82,7 +82,7 @@
 }
 
 .header__burger {
-  margin: 0px 3% 6px 0px;
+  margin: 0px 6% 6px 0px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -91,6 +91,5 @@
   }
   .header__logo {
     width: 100%;
-    text-align: center;
   }
 }
