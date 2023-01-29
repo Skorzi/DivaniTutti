@@ -1,4 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+.burger__menu {
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  overflow: hidden;
+}
+
+.burger__menu._active {
+  overflow-y: scroll;
+}
+
+.burger__menu._active .burger__block_content {
+  left: 0%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.burger__menu._active .burger__category {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s;
+}
+
 .burger__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,35 +71,16 @@
   pointer-events: none;
 }
 
-.burger__menu_block {
-  width: 100%;
-  height: 100%;
-}
-
 .burger__block_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100%;
   position: absolute;
   height: 1000px;
   top: 0;
   left: 100%;
   z-index: 2;
-  -webkit-transition: all 0.3s ease 0.3s;
-  transition: all 0.3s ease 0.3s;
-}
-
-.burger__block_content._active {
-  left: 0%;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.burger__block_content._active .burger__category {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
   -webkit-transition: all 0.3s ease 0.3s;
   transition: all 0.3s ease 0.3s;
 }
