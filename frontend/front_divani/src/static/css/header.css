@@ -21,7 +21,7 @@
           justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
 }
 
 .header__logo {
@@ -41,7 +41,7 @@
   min-width: 650px;
   margin: 0 6% 0 0;
   -ms-flex-item-align: end;
-      align-self: end;
+      align-self: flex-end;
 }
 
 .header__links li {

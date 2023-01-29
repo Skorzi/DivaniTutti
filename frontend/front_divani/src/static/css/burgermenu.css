@@ -70,7 +70,7 @@
   transition: all 0.3s ease 0s;
 }
 
-.burger__block_content._active .burger__catergory {
+.burger__block_content._active .burger__category {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   -webkit-transition: all 0.3s ease 0.3s;

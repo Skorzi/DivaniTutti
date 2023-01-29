@@ -63,7 +63,7 @@
         left: 0%;
         transition: all 0.3s ease 0s;
 
-        .burger__catergory {
+        .burger__category {
             transform: translateY(0%);
             transition: all 0.3s ease 0.3s;
         }
@@ -88,13 +88,13 @@
 
 
 @media screen and (max-width: 1200px) {
-    .burger__search{
+    .burger__search {
         width: 100%;
         // background-color: #212529;
-        
+
     }
 
-    .burger__category{
+    .burger__category {
         display: none;
     }
 }

@@ -18,7 +18,7 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .header__logo {
@@ -33,7 +33,7 @@
     justify-content: space-between;
     min-width: 650px;
     margin: 0 6% 0 0;
-    align-self: end;
+    align-self: flex-end;
 
     li {
         padding: 5px 15px;

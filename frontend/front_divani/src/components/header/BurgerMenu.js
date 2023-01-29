@@ -1,5 +1,7 @@
 import React, {useRef} from 'react'
 import '../../static/css/burgermenu.css'
+import LinksCategory from './LinksCategory'
+
 export default function BurgerMenu({categories}) {
     
     const BGblock = useRef()
@@ -31,7 +33,9 @@ export default function BurgerMenu({categories}) {
             </div>
             <div className='burger__menu_block'>
                 <div ref={BGblock} className='burger__block_content'>
-                    <div className='burger__category'></div>
+                    <div className='burger__category'>
+                        <LinksCategory links={categories} classnameUl={'burger__links'} classnameLi={'burger__li'}/>
+                    </div>
                     <div className='burger__search'></div>
                 </div>
             </div>

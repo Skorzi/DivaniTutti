@@ -1,5 +1,6 @@
 import React from 'react'
 import BurgerMenu from './BurgerMenu'
+import LinksCategory from './LinksCategory'
 import '../../static/css/header.css'
 export default function Header() {
 
@@ -17,14 +18,8 @@ export default function Header() {
             <div className='header__block'>
                 <div className='header__content'>
                     <div className='header__logo'>DIVANI_TUTTI</div>
-                    <div className='header__links'>
-                        {list_of_links.map(name_link => 
-                            <li key={name_link.name} className='header__category'>
-                                <a href={name_link.href}>{name_link.name}</a>
-                            </li>
-                        )}
-                    </div>
-                    <div className='header__burger'><BurgerMenu/></div>
+                    <LinksCategory links={list_of_links} classnameUl={'header__links'} classnameLi={'header__category'}/>
+                    <div className='header__burger'><BurgerMenu categories={list_of_links}/></div>
                 </div>
             </div>
         </div>
