@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 .burger__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,7 +57,8 @@
   display: flex;
   width: 100%;
   height: 100%;
-  position: fixed;
+  position: absolute;
+  height: 1000px;
   top: 0;
   left: 100%;
   z-index: 2;
@@ -88,6 +90,58 @@
   transition: all 0.3s ease 0s;
 }
 
+.burger__links {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.burger__li {
+  padding-bottom: 55px;
+}
+
+.burger__li a {
+  color: white !important;
+  position: relative;
+}
+
+.burger__li a::before {
+  content: ' ';
+  position: absolute;
+  width: 95%;
+  height: 1px;
+  background-color: white;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  left: 3%;
+  top: 110%;
+}
+
+.burger__li a:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
 .burger__search {
   background-color: #fdfbe0;
   width: 50%;
@@ -95,10 +149,22 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .burger__category {
+    width: 100%;
+    height: 50%;
+    -webkit-transform: none;
+            transform: none;
+  }
   .burger__search {
     width: 100%;
+    height: 50%;
+    -webkit-transform: none;
+            transform: none;
   }
-  .burger__category {
-    display: none;
+  .burger__block_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
