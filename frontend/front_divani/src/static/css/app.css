@@ -1,0 +1,8 @@
+body._lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 2000px;
+  width: 100%;
+}
