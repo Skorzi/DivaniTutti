@@ -15,7 +15,7 @@ export default function Header() {
 
 
     return (
-        <div className='header'>
+        <header className='header'>
             <div className='header__block'>
                 <div className='header__content'>
                     <div className='header__logo'>DIVANI_TUTTI</div>
@@ -23,6 +23,6 @@ export default function Header() {
                     <div className='header__burger'><BurgerButton /></div>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
