@@ -68,6 +68,8 @@
 
 .header__burger {
     margin: 0px 6% 6px 0px;
+    width: 25px;
+    height: 15px;
 }
 
 
@@ -79,11 +81,28 @@
 
     .header__logo {
         width: 100%;
+        font-size: 26px;
         // margin: 0 0 0 0%;
     }
 
-}
+    .header__burger{
+        margin: 0px 6% 0 0;
+    }
 
-// @media screen and (max-width: 800px) {
-//     .header_content {}
-// }
+    .header {
+        height: 50px;
+        position: absolute;
+        z-index: 30;
+        background-color: white;
+    }
+
+    .header__block{
+        border-bottom: 1px;
+        border-style: groove;
+    }
+
+    .header__content{
+        align-items: center;
+    }
+
+}

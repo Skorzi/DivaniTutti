@@ -5,10 +5,16 @@
   height: 100vh;
   top: 0;
   overflow: hidden;
+  left: 100%;
+  -webkit-transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s;
 }
 
 .burger__menu._active {
   overflow-y: scroll;
+  left: 0%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .burger__menu._active .burger__block_content {
@@ -102,13 +108,14 @@
 }
 
 .burger__search {
-  background-color: #fdfbe0;
+  background-color: white;
   width: 50%;
   height: 100%;
 }
 
 @media screen and (max-width: 1200px) {
   .burger__category {
+    background-color: #212529;
     width: 100%;
     height: 50%;
     -webkit-transform: none;
@@ -125,5 +132,15 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .burger__links {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 15px;
+    margin-left: 10%;
+  }
+  .burger__li {
+    padding-bottom: 25px;
   }
 }
