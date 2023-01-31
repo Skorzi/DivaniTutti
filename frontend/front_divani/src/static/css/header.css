@@ -26,6 +26,7 @@
 
 .header__logo {
   font-family: 'Cormorant Garamond', serif;
+  color: white;
   font-size: 32px;
   cursor: pointer;
   margin: 0 0 0 6%;
@@ -45,12 +46,13 @@
 }
 
 .header__links li {
+  font-size: 15px;
   padding: 5px 15px;
   font-family: 'Montserrat', sans-serif;
 }
 
 .header__links li a {
-  color: black !important;
+  color: white !important;
   position: relative;
 }
 
@@ -59,7 +61,7 @@
   position: absolute;
   width: 95%;
   height: 1px;
-  background-color: black;
+  background-color: white;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transform: scaleX(0);
@@ -94,6 +96,7 @@
   .header__logo {
     width: 100%;
     font-size: 26px;
+    color: black;
   }
   .header__burger {
     margin: 0px 6% 0 0;

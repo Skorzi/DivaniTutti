@@ -1,13 +1,10 @@
 import React from 'react'
-import BurgerMenu from '../components/burgermenu/BurgerMenu'
-import Header from '../components/header/Header'
+import Main from '../components/main/Main'
 
 export default function MainBlock() {
-  
-  return (
-    <div className='main'>
-        <Header/>
-        <BurgerMenu/>
-    </div>
-  )
+    return (
+        <div className='wrapper__main'>
+            <Main/>
+        </div>
+    )
 }

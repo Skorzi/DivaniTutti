@@ -5,23 +5,30 @@
     height: 100%;
     cursor: pointer;
     position: relative;
-    z-index: 10;
+    z-index: 1001;
 
     &._active {
         .burger__line_1 {
             transform: rotate(-45deg) translate(-1px, 4px);
+            background-color: black;
         }
 
         .burger__line_2 {
             opacity: 0;
+            background-color: black;
+
         }
 
         .burger__line_3 {
             transform: rotate(45deg) translate(-6px, -10px);
+            background-color: black;
+
         }
 
         .burger__menu_block {
             height: 0;
+            background-color: black;
+
         }
     }
 }
@@ -32,8 +39,17 @@
     width: 100%;
     border-radius: 10%;
     height: 1px;
-    background-color: black;
+    background-color: white;
     transition: all 0.3s ease 0s;
     pointer-events: none;
 }
 
+@media screen and (max-width: 1200px) {
+
+    .burger__line_1,
+    .burger__line_2,
+    .burger__line_3 {
+        background-color: black;
+    }
+
+}

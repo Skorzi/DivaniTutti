@@ -11,7 +11,6 @@
 }
 
 .burger__menu._active {
-  overflow-y: scroll;
   left: 0%;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -57,7 +56,7 @@
 
 .burger__links {
   font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
+  font-size: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +67,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .burger__li {
@@ -114,6 +113,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .burger__menu._active {
+    overflow-y: scroll;
+  }
   .burger__category {
     background-color: #212529;
     width: 100%;
